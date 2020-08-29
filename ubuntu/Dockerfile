@@ -15,6 +15,6 @@ ENV DEPS arping \
          wget
 
 RUN apt-get update && \
-    apt-get install -y --no-install-recommends ethtool iproute2 && \
+    apt-get install -y --no-install-recommends $DEPS && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
