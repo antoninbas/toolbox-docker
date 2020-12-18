@@ -9,6 +9,7 @@ ENV DEBIAN_FRONTEND=noninteractive
 ENV DEPS arping \
          curl \
          ethtool \
+         iperf \
          iproute2 \
          iputils-ping \
          nmap \
