@@ -13,6 +13,8 @@ ENV DEPS arping \
          iproute2 \
          iputils-ping \
          nmap \
+         tcpdump \
+         traceroute \
          wget
 
 RUN apt-get update && \
