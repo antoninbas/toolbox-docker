@@ -3,10 +3,10 @@ name: Ubuntu 20.04
 on:
   pull_request:
     branches:
-      - trunk
+      - main
   push:
     branches:
-      - trunk
+      - main
   schedule:
     # every 12 hours
     - cron: '0 */12 * * *'
@@ -21,7 +21,7 @@ jobs:
       working-directory: ubuntu
       run: ./build.sh
     - name: Push image to registry
-      if: ${{ github.repository == 'antoninbas/toolbox-docker' && github.event_name != 'pull_request' && github.ref == 'refs/heads/trunk' }}
+      if: ${{ github.repository == 'antoninbas/toolbox-docker' && github.event_name != 'pull_request' && github.ref == 'refs/heads/main' }}
       env:
         DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
         DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
