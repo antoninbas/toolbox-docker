@@ -14,6 +14,7 @@ ENV DEPS arping \
          iputils-ping \
          nmap \
          tcpdump \
+         telnet \
          traceroute \
          wget
 
