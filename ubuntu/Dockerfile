@@ -8,6 +8,7 @@ ENV DEBIAN_FRONTEND=noninteractive
 # Keep it in lexicographic order
 ENV DEPS arping \
          curl \
+         dnsutils \
          ethtool \
          iperf \
          iproute2 \
