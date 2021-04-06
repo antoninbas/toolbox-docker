@@ -13,6 +13,7 @@ ENV DEPS arping \
          iperf \
          iproute2 \
          iputils-ping \
+         ncat \
          nmap \
          tcpdump \
          telnet \
