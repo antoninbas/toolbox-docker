@@ -15,6 +15,7 @@ ENV DEPS arping \
          iputils-ping \
          ncat \
          nmap \
+         socat \
          tcpdump \
          telnet \
          traceroute \
