@@ -1,4 +1,4 @@
-ARG UBUNTU_VERSION=20.04
+ARG UBUNTU_VERSION=22.04
 FROM ubuntu:${UBUNTU_VERSION}
 LABEL maintainer="Antonin Bas <antonin.bas@gmail.com>"
 LABEL description="A Docker image with useful tools (for networking) based on Ubuntu"
