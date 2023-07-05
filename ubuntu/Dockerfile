@@ -3,8 +3,6 @@ FROM ubuntu:${UBUNTU_VERSION}
 LABEL maintainer="Antonin Bas <antonin.bas@gmail.com>"
 LABEL description="A Docker image with useful tools (for networking) based on Ubuntu"
 
-ENV DEBIAN_FRONTEND=noninteractive
-
 # Keep it in lexicographic order
 ENV DEPS arping \
          curl \
@@ -22,7 +20,7 @@ ENV DEPS arping \
          wget
 
 RUN apt-get update && \
-    apt-get install -y --no-install-recommends $DEPS && \
+    DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends $DEPS && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 
